@@ -50,7 +50,7 @@ module.exports = function (eleventyConfig) {
     function (content, inputPath, outputPath) {
       let words = 'lenght, .lenght, .rigth'.split(',')
 
-      // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+      // Eleventy 2.0+: use this.inputPath and this.outputPath instead
       if (inputPath.endsWith('.md')) {
         for (let word of words) {
           let regexp = new RegExp('\\b(' + word + ')\\b', 'gi')
